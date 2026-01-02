@@ -4,190 +4,105 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anoitecer de um Verão</title>
-
-  <meta name="description" content="Anoitecer de um Verão é um relato íntimo sobre amor, perda e a coragem silenciosa de continuar. Livro físico e Kindle." />
-
+  <meta name="description" content="Livro Anoitecer de um Verão — luto, fé e esperança. Livro físico e e-book." />
   <style>
     :root {
+      --bg: #0f1115;
       --card: #161a22;
-      --text: #f5f5f5;
-      --muted: #c5c9d6;
+      --text: #e6e8ee;
+      --muted: #a8adbd;
+      --accent: #c9a45c;
+      --btn: #ffffff;
+      --btn-text: #0f1115;
     }
-
     * { box-sizing: border-box; }
-
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      color: var(--text);
-      background:
-        linear-gradient(rgba(10,10,15,0.75), rgba(10,10,15,0.85)),
-        url"./assets/fundo.jpg" no-repeat center center fixed;
-      background-size: cover;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-
-    header {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .hero img {
-      max-width: 360px;
-      width: 100%;
-      border-radius: 6px;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.2rem);
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    .subtitle {
-      font-size: 1.1rem;
-      opacity: 0.85;
-      margin-bottom: 1.5rem;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 16px;
-      padding: 24px;
-      margin-top: 48px;
-    }
-
-    .cta {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #f5f5f5;
+  background: linear-gradient(rgba(10,10,15,0.75), rgba(10,10,15,0.85)), url('./assets/fundo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+    @media (max-width: 900px) { header { grid-template-columns: 1fr; } }
+    .cover { background: var(--card); border-radius: 16px; padding: 24px; text-align: center; }
+    .cover img { max-width: 100%; border-radius: 12px; }
+    .hero h1 { font-size: 42px; margin: 0 0 12px; }
+    .hero p { color: var(--muted); font-size: 18px; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
     .btn {
-      padding: 0.9rem 2rem;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.35);
-      text-decoration: none;
-      color: #fff;
-      transition: all .3s ease;
+      padding: 14px 18px; border-radius: 999px; border: none; cursor: pointer; font-weight: bold;
+      background: var(--btn); color: var(--btn-text); text-decoration: none; display: inline-block;
     }
-
-    .btn.secondary {
-      opacity: 0.9;
-    }
-
-    ul {
-      padding-left: 18px;
-    }
-
-    .authors img {
-      max-width: 280px;
-      border-radius: 50%;
-      filter: grayscale(80%);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-      margin-bottom: 1.5rem;
-    }
-
-    footer {
-      margin: 48px 0 24px;
-      text-align: center;
-      opacity: 0.7;
-      font-size: 0.9rem;
-    }
+    .btn.secondary { background: transparent; color: var(--text); border: 1px solid #2a2f3a; }
+    section { margin-top: 48px; }
+    .card { background: var(--card); border-radius: 16px; padding: 24px; }
+    h2 { margin-top: 0; }
+    ul { padding-left: 18px; }
+    footer { margin: 48px 0 24px; color: var(--muted); text-align: center; }
   </style>
 </head>
-
 <body>
   <div class="container">
+    <header style="min-height:100vh; display:flex; align-items:center; justify-content:center; padding:4rem 1rem; background:linear-gradient(180deg, #0f0f14 0%, #1a1a24 60%, #0f0f14 100%);">
+  <div style="max-width:1100px; width:100%; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:3rem; align-items:center;">
+    <div style="text-align:center;">
+      <img src="./assets/capa.jpg" alt="Capa do livro O Anoitecer de um Verão" style="max-width:360px; width:100%; border-radius:6px; box-shadow:0 25px 60px rgba(0,0,0,0.6);" />
+    </div>
+    <div>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.2rem); margin-bottom:1rem;">Anoitecer de um Verão</h1>
+      <p style="font-size:1.1rem; opacity:0.85; margin-bottom:1.5rem;"><em>Quando o amor sobrevive ao anoitecer.</em></p>
+      <p style="max-width:520px; opacity:0.8; margin-bottom:2rem;">Um relato íntimo sobre amor, perda e a coragem silenciosa de continuar.</p>
+      <a href="#comprar" style="display:inline-block; padding:0.9rem 2rem; border:1px solid rgba(255,255,255,0.35); border-radius:30px; text-decoration:none; color:#fff; transition:all .3s ease;">Adquirir o livro</a>
+    </div>
+  </div>
+</header>
 
-    <!-- HERO -->
-    <header>
-      <div class="hero" style="text-align:center;">
-        <img src="./assets/capa.jpg" alt="Capa do livro Anoitecer de um Verão">
-      </div>
-
-      <div>
-        <h1>Anoitecer de um Verão</h1>
-        <p class="subtitle"><em>Quando o amor sobrevive ao anoitecer.</em></p>
-        <p>Um relato íntimo sobre amor, perda e a coragem silenciosa de continuar.</p>
-
-        <div class="cta">
-          <a href="#comprar" class="btn">Adquirir o livro</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- SOBRE O LIVRO -->
     <section class="card">
       <h2>Sobre o livro</h2>
       <p>Anoitecer de um Verão é um relato íntimo sobre amor, perda e a coragem silenciosa de continuar.</p>
-      <p>Entre lembranças que queimam e outras que aquecem, Philipe Vassoler dos Santos revisita dias marcados pela luz do afeto e pela sombra do adeus.</p>
+      <p>Entre lembranças que queimam e outras que aquecem, Philipe Vassoler dos Santos revisita dias marcados pela luz do afeto e pela sombra do adeus. Escrever tornou-se não apenas um gesto de memória, mas um caminho de sobrevivência — um processo doloroso e necessário para transformar o que era ferida em significado.</p>
+      <p>Nesta obra, o autor abre as portas do seu verão interrompido e convida o leitor a caminhar com ele pelo território sensível do luto: um lugar onde o tempo parece parar, mas a vida insiste em seguir adiante.</p>
       <p>É um livro sobre sentir profundamente, sobre se permitir cair e, sobretudo, sobre encontrar forças onde restou apenas silêncio.</p>
       <p><strong>Mais do que uma história de perda, é uma história de amor — e da esperança que, mesmo tímida, sempre volta a nascer.</strong></p>
     </section>
 
-    <!-- PARA QUEM É -->
     <section class="card">
       <h2>Para quem é</h2>
       <ul>
-        <li>Pessoas que atravessaram perdas e dores profundas</li>
-        <li>Quem enfrenta crises e dificuldades da vida</li>
-        <li>Leitores que buscam amadurecimento emocional e sentido</li>
-        <li>Cristãos que sofreram e desejam refletir sobre fé em meio à dor</li>
-        <li>Qualquer pessoa que precise aprender a continuar</li>
+        <li>Pessoas que atravessaram o luto ou uma perda significativa</li>
+        <li>Quem enfrenta dores profundas, crises ou momentos difíceis da vida</li>
+        <li>Leitores que buscam sentido, amadurecimento emocional e esperança</li>
+        <li>Cristãos que sofreram, têm perguntas e desejam refletir sobre fé em meio à dor</li>
+        <li>Qualquer pessoa que queira aprender a atravessar o sofrimento com mais consciência e humanidade</li>
       </ul>
     </section>
 
-    <!-- AUTORES -->
-    <section class="card authors" style="text-align:center;">
+    <section class="card">
       <h2>Sobre os autores</h2>
-      <img src="./assets/autores.jpg" alt="Philipe e Miriam Vassoler dos Santos">
-
-      <p><strong>Philipe Vassoler dos Santos</strong> e <strong>Miriam Braga Mendes Vassoler dos Santos</strong> são casados desde 21/12/2006 e pais de Estêvão, Estella e Heitor.</p>
-
-      <p>A história deste livro nasce da jornada de amor, dor e saudade vivida com seu primogênito, Estêvão — um menino que marcou sua família com luz, sensibilidade e presença.</p>
-
-      <p>Hoje, a família vive em Palhoça/SC, honrando a memória de Estêvão e construindo, dia após dia, novos passos de esperança, fé e significado.</p>
-
-      <p><em>Este livro é parte desse legado.</em></p>
+      <div style="text-align:center; margin-bottom:1.5rem;">
+        <img src="assets/autores.png" alt="Philipe e Miriam Vassoler dos Santos" style="max-width:280px; border-radius:12px; filter: grayscale(80%); box-shadow:0 10px 30px rgba(0,0,0,0.35);" />
+      </div>
+      <p><strong>Philipe Vassoler dos Santos</strong> e <strong>Miriam Braga Mendes Vassoler dos Santos</strong> são casados desde 21/12/2006 e pais de Estêvão, Estella e Heitor. A história deste livro nasce da jornada de amor, dor e saudade vivida com seu primogênito, Estêvão — um menino que marcou sua família com luz, sensibilidade e presença, deixando memórias que continuam vivas em cada página.</p>
+      <p>Philipe é formado em Teologia, pastor e autor desta obra. Sua escrita reúne fé, vulnerabilidade e a busca sincera por sentido em meio ao luto. Ao transformar experiências profundas em palavras, ele convida o leitor a enxergar que, mesmo no escurecer da alma, ainda há caminhos possíveis de cura.</p>
+      <p>Miriam é terapeuta, e seu olhar humano e acolhedor foi essencial na construção deste livro. Ela acompanha cada parte desse processo não apenas como esposa, mas como mãe que atravessou a mesma dor e escolheu permanecer firme, oferecendo amor, equilíbrio e presença.</p>
+      <p>Hoje, a família vive em Palhoça/SC, onde segue honrando a memória de Estêvão e construindo, dia após dia, novos passos de esperança, fé e significado. <em>Este livro é parte desse legado.</em></p>
     </section>
 
-    <!-- COMPRA -->
     <section id="comprar" class="card">
       <h2>Adquira o livro</h2>
-      <p>Escolha o formato que melhor se adapta à sua experiência de leitura.</p>
-
+      <p>Escolha o formato que melhor se adapta à sua experiência de leitura. Os links serão integrados em breve.</p>
       <div class="cta">
-        <a href="#" class="btn">📘 Comprar no Kindle</a>
-        <a href="#" class="btn secondary">📖 Comprar livro físico</a>
+        <a href="#" class="btn">Comprar no Kindle (e‑book)</a>
+        <a href="#" class="btn secondary">Comprar livro físico</a>
       </div>
     </section>
 
     <footer>
-      © <span id="year"></span> • Anoitecer de um Verão
+      <p>© <span id="year"></span> • Anoitecer de um Verão</p>
     </footer>
-
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
