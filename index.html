@@ -106,6 +106,21 @@
       <a id="fisicoLink" href="#" class="btn secondary">Comprar livro físico</a>
     </div>
   </div>
+
+      <script>
+  let quantidade = 1;
+
+  function alterarQtd(valor) {
+    quantidade += valor;
+    if (quantidade < 1) quantidade = 1;
+    document.getElementById('qtd').textContent = quantidade;
+
+    // Aqui futuramente você pode integrar com Hotmart, WhatsApp ou checkout
+    document.getElementById('fisicoLink').href =
+      `https://SEULINKAQUI.com?quantidade=${quantidade}`;
+  }
+</script>
+
       
 </section>
     <footer>
